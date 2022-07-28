@@ -2,7 +2,7 @@
   "name": "DSA450",
   "displayName": "DSA-450",
   "description": "An offline vscode extension to practice a list of topic-wise DSA questions.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "JaspreetSingh",
   "icon": "images/icon.png",
   "engines": {
