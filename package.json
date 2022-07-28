@@ -4,6 +4,7 @@
   "description": "DSA-450 is a comprehensive list of 400 + topic wise questions to build your confidence in data structure and algorithms and prepare yourself for placements.",
   "version": "0.0.1",
   "publisher": "JaspreetSingh",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.69.0"
   },
@@ -42,5 +43,13 @@
   "dependencies": {
     "axios": "^0.27.2",
     "markdown-it": "^13.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Jaspreet-singh-1032/DSA-450/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jaspreet-singh-1032/DSA-450.git"
+  },
+  "homepage": "https://github.com/Jaspreet-singh-1032/DSA-450/blob/master/README.md"
 }
