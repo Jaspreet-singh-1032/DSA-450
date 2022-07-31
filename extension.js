@@ -6,6 +6,7 @@ const {
   listTopics,
   listQuestions,
   getQuestionContent,
+  createDataDir,
 } = require("./utils");
 
 // this method is called when your extension is activated
@@ -27,6 +28,7 @@ async function activate(context) {
     "DSA450.showTopicsList",
     async function () {
       // The code you place here will be executed every time your command is executed
+      await createDataDir(context);
 
       async function showTopics() {
         // show list of topics

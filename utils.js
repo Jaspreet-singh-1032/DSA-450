@@ -98,9 +98,20 @@ async function mdToHtml(mdStr) {
   return md.render(mdStr);
 }
 
+async function createDataDir(context) {
+  // create directory to save topics and questions if not already exists
+  const globalStorageUri = await context.globalStorageUri;
+  try {
+    await vscode.workspace.fs.stat(globalStorageUri);
+  } catch (error) {
+    await vscode.workspace.fs.createDirectory(globalStorageUri);
+  }
+}
+
 module.exports = {
   syncQuestions,
   listTopics,
   listQuestions,
   getQuestionContent,
+  createDataDir
 };
